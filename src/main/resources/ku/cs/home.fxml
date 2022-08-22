@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ku.cs.shop.controllers.HomeController"
+            prefHeight="600.0" prefWidth="800.0">
+    <children>
+        <Label layoutX="252.0" layoutY="46.0" text="Welcome to Shop Application">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Button layoutX="373.0" layoutY="114.0" mnemonicParsing="false" text="ผู้จัดทำ" onAction="#handleAboutButton" />
+        <Button layoutX="358.0" layoutY="154.0" mnemonicParsing="false" text="Member List" onAction="#handleMemberCardListButton" />
+        <Button layoutX="332.0" layoutY="342.0" mnemonicParsing="false" onAction="#handleJohnMemberCardButton" text="บัตรสมาชิกของ John" />
+        <Button layoutX="332.0" layoutY="416.0" mnemonicParsing="false" onAction="#handleHarryMemberCardButton" text="บัตรสมาชิกของ Harry" />
+        <Button layoutX="332.0" layoutY="378.0" mnemonicParsing="false" onAction="#handleAnnaMemberCardButton" text="บัตรสมาชิกของ Anna" />
+    </children>
+
+
+</AnchorPane>

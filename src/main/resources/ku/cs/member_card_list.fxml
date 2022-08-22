@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ku.cs.shop.controllers.MemberCardListController"
+            prefHeight="600.0" prefWidth="800.0">
+    <children>
+        <Separator layoutX="397.0" orientation="VERTICAL" prefHeight="606.0" prefWidth="4.0" />
+        <Label layoutX="96.0" layoutY="53.0" text="List of Member Cards" textFill="#1a00ff">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="backBtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Back" onAction="#handleBackButton" />
+        <ListView fx:id="cardsListView" layoutX="36.0" layoutY="103.0" prefHeight="465.0" prefWidth="336.0" />
+        <Label layoutX="453.0" layoutY="53.0" text="Selected Member Card Detail" textFill="#1a00ff">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="453.0" layoutY="143.0" text="Name" />
+        <Label fx:id="nameLabel" layoutX="601.0" layoutY="143.0" text="nameLabel" />
+        <Label layoutX="453.0" layoutY="187.0" text="Phone" />
+        <Label fx:id="phoneLabel" layoutX="601.0" layoutY="187.0" text="phoneLabel" />
+        <Label layoutX="452.0" layoutY="231.0" text="Cumulative Purchase" />
+        <Label layoutX="691.0" layoutY="231.0" text="Point" />
+        <Label fx:id="cpLabel" layoutX="470.0" layoutY="268.0" text="cpLabel" textFill="#b42020">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="ptLabel" layoutX="665.0" layoutY="268.0" text="ptLabel" textFill="#2083b2">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+    </children>
+
+</AnchorPane>

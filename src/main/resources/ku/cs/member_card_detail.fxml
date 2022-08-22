@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ku.cs.shop.controllers.MemberCardDetailController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+
+        <Label fx:id="nameLabel" layoutX="207.0" layoutY="77.0" text="nameLabel">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Label fx:id="phoneLabel" layoutX="629.0" layoutY="77.0" text="phoneLabel">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Label layoutX="89.0" layoutY="80.0" text="ชื่อผู้ถือบัตร" />
+        <Label layoutX="506.0" layoutY="80.0" text="เบอร์โทรศัพท์" />
+        <Label layoutX="89.0" layoutY="120.0" text="ยอดซื้อสะสม (บาท)" />
+        <Label layoutX="506.0" layoutY="120.0" text="คะแนนสะสม (แต้ม)" />
+        <Label fx:id="cumulativePurchaseLabel" layoutX="89.0" layoutY="148.0" text="cumulativePurchaseLabel">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="pointLabel" layoutX="506.0" layoutY="148.0" text="pointLabel">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="89.0" layoutY="235.0" text="เพิ่มยอดซื้อสินค้า" />
+        <TextField fx:id="purchaseTextField" layoutX="89.0" layoutY="269.0" />
+        <Label layoutX="89.0" layoutY="394.0" text="ใช้คะแนนสะสม" />
+        <TextField fx:id="pointTextField" layoutX="89.0" layoutY="420.0" />
+        <Button layoutX="89.0" layoutY="311.0" mnemonicParsing="false" onAction="#handleAddPurchaseButton" text="เพิ่มยอดซื้อ" />
+        <Button layoutX="89.0" layoutY="462.0" mnemonicParsing="false"  onAction="#handleUsePointButton" text="ใช้คะแนน" />
+        <Label layoutX="249.0" layoutY="14.0" text="Member Card Detail" textFill="#1106f0">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="259.0" layoutY="271.0" text="บาท">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="259.0" layoutY="422.0" text="บาท">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Button layoutX="740.0" layoutY="560.0" mnemonicParsing="false"  onAction="#handleBackButton" text="back" />
+    </children>
+
+</AnchorPane>
