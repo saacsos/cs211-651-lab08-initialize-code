@@ -16,12 +16,13 @@ public class HelloApplication extends Application {
         FXRouter.goTo("home");
 
     }
+
     private static void configRoute() {
         String packageStr = "ku/cs/";
-        FXRouter.when("member_card_detail", packageStr+"member_card_detail.fxml");
-        FXRouter.when("home", packageStr+"home.fxml");
-        FXRouter.when("about", packageStr+"about.fxml");
-        FXRouter.when("member_card_list", packageStr+"member_card_list.fxml");
+        FXRouter.when("member_card_detail", packageStr + "member_card_detail.fxml");
+        FXRouter.when("home", packageStr + "home.fxml");
+        FXRouter.when("about", packageStr + "about.fxml");
+        FXRouter.when("member_card_list", packageStr + "member_card_list.fxml");
     }
 
 
